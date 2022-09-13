@@ -1,0 +1,11 @@
+<h1><%= "Car ##{@car.id}" %></h1>
+<br>
+<ul>
+  <h3>Car Attributes:</h3>
+  <% @car.variants.each do |v| %>
+    <li><%= v.variant %></li>
+  <% end %>
+</ul>
+
+<%= link_to "Home", root_path %>
+<%= link_to "Edit", edit_car_path %>

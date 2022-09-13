@@ -1,0 +1,9 @@
+<h1>New Car!</h1>
+
+<%= form_with model: @car do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= render "shared/variant_form", f: f %>
+
+  <%= f.submit %>
+<% end %>

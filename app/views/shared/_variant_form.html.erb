@@ -1,0 +1,4 @@
+  <%= f.fields_for @car.variants.build do |sub_form| %>
+    <%= sub_form.label :variant %>
+    <%= sub_form.text_field :variant %>
+  <% end %>

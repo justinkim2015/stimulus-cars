@@ -1,0 +1,11 @@
+<h1>Add New Attributes!</h1>
+
+<%= form_with model: @car do |f| %>
+  <%= render "shared/variant_form", f: f %>
+  <%= f.submit %>
+<% end %>
+
+<br>
+
+<%= link_to "Home", root_path %>
+<%= link_to "Back", car_path(params[:id]) %>
